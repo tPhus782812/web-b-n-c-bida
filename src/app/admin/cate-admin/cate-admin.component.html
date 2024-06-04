@@ -1,0 +1,44 @@
+      <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <!-- Existing content... -->
+          <div class="left">
+            <h1>Manage Category </h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Thêm bảng mới vào đây -->
+        <div class="table-wrapper">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên Loại</th>
+                <th>Trạng thái</th>
+
+              </tr>
+            </thead>
+            <tbody *ngFor="let c of cates">
+              <tr>
+                <td>{{c.id}}</td>
+                <td>{{c.name}}</td>
+                <td>
+                  <button class="btn-edit">Sửa</button>
+                  <button class="btn-delete">Xóa</button>
+                </td>
+              </tr>
+              <!-- Thêm các hàng khác tùy theo dữ liệu của bạn -->
+            </tbody>
+
+            
+          </table>
+        </div>
+      </main>
+      <!-- MAIN -->

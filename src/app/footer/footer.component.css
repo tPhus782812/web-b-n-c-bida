@@ -1,0 +1,137 @@
+.our-services {
+    background: black;
+}
+
+.our-services-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.our-services-box .our-services-item {
+    text-align: center;
+    margin: 30px 40px;
+    width: 350px;
+    line-height: 35px;
+    padding: 15px;
+}
+
+.our-services-box .our-services-item .our-services-icon {
+    padding: 30px 40px;
+    box-shadow: black;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 23px;
+    color: orange;
+    transition: all .4s ease-in-out;
+    margin-bottom: 35px;
+}
+
+.our-services-box .our-services-item .our-services-icon:hover {
+    background: orange;
+    color: white;
+}
+
+.our-services-box .our-services-item .our-services-body h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.our-services-box .our-services-item .our-services-body label {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+/* footer */
+
+.footer {
+    padding: 80px 90px;
+    background: #3D3B40;
+    margin-top: 30px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3D3B40;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footer-box .footer-i h4 {
+    margin-bottom: 30px;
+    font-size: 19px;
+
+}
+
+.footer-box .footer-i label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: rgb(137, 130, 130);
+}
+
+.footer-box .footer-i {
+    margin: 30px;
+}
+
+.footer-box .footer-i.f3 {
+    position: relative;
+    bottom: 40px;
+}
+
+.footer-box .footer-i.f4 {
+    position: relative;
+    top: 32px;
+}
+
+.footer-box .footer-i.f4 label {
+    width: 400px;
+    display: block;
+    line-height: 27px;
+}
+
+.footer-box .footer-i.f4 input {
+    display: inline-block;
+    margin-top: 20px;
+    width: 300px;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+}
+
+.footer-box .footer-i.f4 button {
+    padding: 12px;
+    position: relative;
+    right: 8px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-box .footer-i.f4 .social-media {
+    margin-top: 30px;
+}
+
+.footer-box .footer-i.f4 .social-media a i {
+    color: white;
+    margin-right: 10px;
+    font-size: 19px;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    padding: 13px;
+    background-color: #E2AF5A;
+
+}
+
+.footer-box .footer-i.f4 .social-media a i:hover {
+    background: white;
+    color: black;
+}
+

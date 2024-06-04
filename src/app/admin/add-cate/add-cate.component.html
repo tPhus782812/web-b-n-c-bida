@@ -1,0 +1,40 @@
+
+<div class="head-title">
+    <!-- Existing content... -->
+    <div class="left">
+        <h1> Add cate </h1>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i></li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+
+<form [formGroup]="cateForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>ID</label>
+        <input type="number" formControlName="id" class="form-control">
+        <span *ngIf="cateForm?.get('id')?.invalid &&
+        cateForm?.get('id')?.touched">
+            Bạn chưa nhập ID
+        </span>
+    </div>
+
+    <div class="form-group">
+        <label>Tên Loại</label>
+        <input type="text" formControlName="name" class="form-control">
+        <!-- Đoạn này sẽ kiểm tra productForm và productName có tồn tại trước khi truy cập đến valid và touched -->
+        <span *ngIf="cateForm?.get('name')?.invalid &&
+        cateForm?.get('name')?.touched">
+            Bạn chưa nhập tên
+        </span>
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Submit</button>

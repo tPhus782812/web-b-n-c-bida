@@ -1,0 +1,276 @@
+<div class="content">
+    <div class="content-box">
+        <h2>Giảm giá 5% <br>Cho tất cả sản phẩm mới </h2>
+        <label>Chuyên cung cấp cơ & phụ kiện <span>Billiards</span> </label> <br>
+        <a href="">Mua ngay <i class="fa-solid fa-arrow-right"></i> </a>
+    </div>
+</div>
+
+<div class="category" id="category">
+    <div class="category-title">
+        <!-- <h2>Sản phẩm son bóng </h2> -->
+    </div>
+    <div class="category-box">
+        <div class="box woman-box">
+            <div class="box-content b2">
+                <h3>Phổ biến nhất</h3>
+                <label>Bida lỗ</label>
+                <a href="">
+                    <h4>Xem</h4>
+                </a>
+
+            </div>
+            <img src="assets/image/anh_bida1.jpg">
+        </div>
+
+        <div class="box man-box">
+            <div class="box-content">
+                <h3>Lâu đời nhất</h3>
+                <label>Bida LIB</label>
+                <a href="">
+                    <h4>Xem</h4>
+                </a>
+            </div>
+            <img src="assets/image/anh-bida4.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="most-rated">
+    <div class="most-rated-box">
+        <div class="most-rated-title">
+            <h1>ĐÁNH GIÁ CAO NHẤT</h1>
+        </div>
+
+        <div class="most-rated-items">
+            <div *ngFor="let sp of products" class="most-rated-item">
+                <div class="most-rated-image">
+                    <a routerLink="/products/{{sp.id}}" routerLinkActive="active" ariaCurrentWhenActive="page"><img
+                            src="assets/image/{{sp.image}}"></a>
+                </div>
+                <div class="most-rated-body">
+                    <h4>{{sp.name}}</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">{{sp.price_sale}}đ</label>
+                        <label>{{sp.price}}đ</label>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="most-rated-item">
+                <div class="most-rated-image">
+                    <img src="assets/image/peri2.jpg">
+                </div>
+                <div class="most-rated-body">
+                    <h4> Cơ Peri P-D03</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-rated-item">
+                <div class="most-rated-image">
+                    <img src="assets/image/peri3.jpg" alt="">
+                </div>
+                <div class="most-rated-body">
+                    <h4>Cơ Peri P-D03</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="most-rated-item">
+                <div class="most-rated-image">
+                    <img src="assets/image/peri4.jpg" alt="">
+                </div>
+                <div class="most-rated-body">
+                    <h4> Cơ Peri P-D03</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div class="popula-products" id="products">
+    <div class="popular-products-box">
+        <div class="popular-products-title">
+            <h1>BÀN BIDA SỊN</h1>
+        </div>
+        <div class="popular-products-items">
+            <div class="popular-products-item">
+                <div class="popular-products-image">
+                    <img src="assets/image/ban-bida1.jpg" alt="">
+                </div>
+                <div class="popular-products-body">
+                    <h4>Bàn bida KKKing Victory</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-products-item">
+                <div class="popular-products-image">
+                    <img src="assets/image/ban-bida2.jpg" alt="">
+                </div>
+                <div class="popular-products-body">
+                    <h4>Bàn bida KKKing Victory</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-products-item">
+                <div class="popular-products-image">
+                    <img src="assets/image/ban-bida3.jpg" alt="">
+                </div>
+                <div class="popular-products-body">
+                    <h4>Bàn bida KKKing Victory</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-products-item">
+                <div class="popular-products-image">
+                    <img src="assets/image/ban-bida4.jpg">
+                </div>
+                <div class="popular-products-body">
+                    <h4>Bàn bida KKKing Victory</h4>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <div class="price">
+                        <label class="sale">199.000đ</label>
+                        <label>149.000đ</label>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="popular-products-btn">
+            <button>More</button>
+        </div>
+
+    </div>
+</div>
+
+<section class="sale">
+    <div class="container">
+        <h2>CHUYÊN TRANG KHUYẾN MÃI</h2>
+        <div class="sale-items row-gird">
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida1.jpg" alt=""></a>
+            </div>
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida1.jpg" alt=""></a>
+            </div>
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida1.jpg" alt=""></a>
+            </div>
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida2.jpg" alt=""></a>
+            </div>
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida4.jpg" alt=""></a>
+            </div>
+            <div class="sale-item">
+                <a href="#"><img src="assets/image/ban-bida3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="discount-news" id="news">
+    <div class="discount-news-box">
+        <div class="discount-news-content">
+            <p>Giảm giá 5% cho tất cả các sản phẩm mới ra mắt <br> trong tháng này</p>
+            <div class="time">
+                <label id="days">10 <span>day:</span></label> <!--Days-->
+                <label id="hours">50<span>:</span></label> <!--Hours-->
+                <label id="minutes">10<span>:</span></label> <!--Minutes-->
+                <label id="seconds">40</label> <!--Seconds-->
+            </div>
+        </div>
+        <div class="discount-news-assets/image">
+            <img src="assets/image/ban-bida2-rg.png">
+        </div>
+    </div>
+</div>

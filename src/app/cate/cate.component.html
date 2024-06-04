@@ -1,0 +1,255 @@
+<div class="content">
+    <div class="content-box">
+        <h2>Cơ Billiard </h2>
+        <label>Chuyên cung cấp cơ & phụ kiện đa dạng các sản phẩm Cơ gậy từ các thương hiệu lớn tại thị trường, <br>
+            với đầy đủ các phân khúc giá khác nhau</label> <br>
+        <!-- <a href=""> <i class="fa-solid fa-arrow-right"></i> </a> -->
+    </div>
+</div>
+<div class="single-category">
+    <div class="container">
+        <div class="wrapper">
+            <div class="column">
+                <div class="holder">
+                    <div class="content-wrapper">
+                        <div class="row sidebar">
+                            <div class="filter">
+                                <div class="filter-block">
+                                    <h4>Danh sách loại</h4>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="checkbox" id="co_bida">
+                                            <label for="co_bida">
+                                                <span class="checked"></span>
+                                                <span>Cơ Billiard</span>
+                                            </label>
+                                            <span class="count">15</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkbox" id="ban_bida">
+                                            <label for="ban_bida">
+                                                <span class="checked"></span>
+                                                <span>Bàn Billiard</span>
+                                            </label>
+                                            <span class="count">10</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkbox" id="gang_tay">
+                                            <label for="gang_tay">
+                                                <span class="checked"></span>
+                                                <span>Găng tay Billiard</span>
+                                            </label>
+                                            <span class="count">20</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkbox" id="lo_bida">
+                                            <label for="lo_bida">
+                                                <span class="checked"></span>
+                                                <span>Lơ Billiard</span>
+                                            </label>
+                                            <span class="count">11</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filter-block">
+                                    <h4>Thương hiệu</h4>
+                                    <ul>
+                                        <li *ngFor="let c of cates">
+                                            <input type="checkbox" name="checkbox" id="peri">
+                                            <label for="peri">
+                                                <span class="checked"></span>
+                                                <span>{{c.name}}</span>
+                                            </label>
+                                            <!-- <span class="count">15</span> -->
+                                            <!-- </li>
+                                    <li>
+                                        <input type="checkbox" name="checkbox" id="o_min">
+                                        <label for="o_min">
+                                            <span class="checked"></span>
+                                            <span>Omin</span>
+                                        </label>
+                                        <span class="count">10</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="checkbox" id="cupa">
+                                        <label for="cupa">
+                                            <span class="checked"></span>
+                                            <span>Cupa</span>
+                                        </label>
+                                        <span class="count">20</span>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="checkbox" id="lo_bida">
+                                        <label for="lo_bida">
+                                            <span class="checked"></span>
+                                            <span>Lơ bida</span>
+                                        </label>
+                                        <span class="count">11</span>
+                                    </li> -->
+                                    </ul>
+                                </div>
+                                <div class="filter-block pricing">
+                                    <h4>Price</h4>
+                                    <div class="byprice">
+                                        <div class="range track">
+                                            <input type="range" value="25000" min="0" max="100000">
+                                        </div>
+                                        <div class="price-range">
+                                            <span class="price-form">1Đ</span>
+                                            <span class="price-form">100M</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="prodcuts main flexwrap">
+                                <div class="most-rated">
+                                    <div class="most-rated-box">
+                                        <div class="most-rated-title">
+                                            <h1>Danh sách sản phẩm</h1>
+                                        </div>
+
+                                        <div class="most-rated-items">
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <a href="chitiet.html"><img src="assets/image/peri1.jpg"></a>
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4>Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <img src="assets/image/peri2.jpg">
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4> Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <img src="assets/image/peri3.jpg" alt="">
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4>Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <img src="assets/image/peri4.jpg" alt="">
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4> Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <a href="chitiet.html"><img src="assets/image/peri1.jpg"></a>
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4>Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="most-rated-item">
+                                                <div class="most-rated-image">
+                                                    <a href="chitiet.html"><img src="assets/image/peri1.jpg"></a>
+                                                </div>
+                                                <div class="most-rated-body">
+                                                    <h4>Cơ Peri P-D03</h4>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="price">
+                                                        <label class="sale">199.000đ</label>
+                                                        <label>149.000đ</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="load-more flexcenter">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

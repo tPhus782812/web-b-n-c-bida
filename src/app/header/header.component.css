@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+html{
+background-color: black;
+}
+/* header */
+.nav-container {
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(35dsale-item imgeg, rgba(0, 0, .1), rgba(0, 0, 0, .1)); */
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1;
+    /* position: absolute; */
+    position: fixed;
+}
+
+.nav-container .logo {
+    width: 100px;
+
+}
+
+.nav-container .logo img {
+    border-radius: 50%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin: 0 10px;
+    text-decoration: none;
+
+
+
+}
+
+.nav-bar ul li a:hover {
+    color: #E2AF5A;
+    background: white;
+}
+.nav-bar-icon{
+    background-color: white;
+}

@@ -1,0 +1,73 @@
+.table-wrapper {
+	margin-top: 20px;
+	overflow-x: auto;
+    border: 1px solid #E2AF5A;
+  }
+  
+  .styled-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .styled-table thead tr {
+	background-color: #E2AF5A;
+	color: #ffffff;
+	text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+	padding: 12px 15px;
+    color: #ffff;
+  }
+  tbody image{
+	width: 30px;
+  }
+  
+  .styled-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+	border-bottom: 2px solid #E2AF5A;
+  }
+  
+  .styled-table tbody tr.active-row {
+	font-weight: bold;
+	color: #E2AF5A;
+  }
+  .styled-table tbody td img{
+	width: 70px;
+  }
+  .btn-edit, .btn-delete {
+	padding: 5px 10px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .btn-edit {
+	background-color: #ffa502;
+	color: white;
+  }
+  
+  .btn-delete {
+	background-color: #ff4757;
+	color: white;
+  } 
+main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #E2AF5A;
+}

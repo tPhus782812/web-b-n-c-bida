@@ -1,0 +1,135 @@
+<div *ngIf="product" class="content" style="background-image: url('assets/image/{{product.image}}');">
+    <div class="content-box">
+        <!-- <h2>Cơ</h2> -->
+        <label> <strong> Cơ {{product.name}}</strong> <br> <span>{{product.price}}VNĐ</span> </label> <br>
+        <a href="">Thêm vào giỏ hàng </a>
+    </div>
+</div>
+
+<section>
+    <div class='container'>
+        <div class="popular-products-title">
+            <h1> <i class="fa-solid fa-thumbtack"></i>Thông tin sản phẩm</h1>
+        </div>
+        <div id="detail" *ngIf="cate">
+            <div id='right'>
+                <table class="mota">
+                    <tbody>
+                        <tr>
+                            <th>Thương hiệu</th>
+                            <td>{{cate.name}}</td>
+                        </tr>
+                        <tr>
+                            <th>Price</th>
+                            <td>{{product.price}}</td>
+                        </tr>
+                        <tr>
+                            <th>Ngày đăng</th>
+                            <td>{{product.date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="popula-products" id="products">
+        <div class="popular-products-box">
+            <div class="popular-products-title">
+                <h1> <i class="fa-solid fa-thumbtack"></i> Sản phẩm liên quan</h1>
+            </div>
+            <div class="popular-products-items">
+                <div class="popular-products-item">
+                    <div class="popular-products-image">
+                        <img src="image/ban-bida1.jpg" alt="">
+                    </div>
+                    <div class="popular-products-body">
+                        <h4>Bàn bida KKKing Victory</h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="price">
+                            <label class="sale">199.000đ</label>
+                            <label>149.000đ</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-products-item">
+                    <div class="popular-products-image">
+                        <img src="image/ban-bida2.jpg" alt="">
+                    </div>
+                    <div class="popular-products-body">
+                        <h4>Bàn bida KKKing Victory</h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="price">
+                            <label class="sale">199.000đ</label>
+                            <label>149.000đ</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-products-item">
+                    <div class="popular-products-image">
+                        <img src="image/ban-bida3.jpg" alt="">
+                    </div>
+                    <div class="popular-products-body">
+                        <h4>Bàn bida KKKing Victory</h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="price">
+                            <label class="sale">199.000đ</label>
+                            <label>149.000đ</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-products-item">
+                    <div class="popular-products-image">
+                        <img src="image/ban-bida4.jpg">
+                    </div>
+                    <div class="popular-products-body">
+                        <h4>Bàn bida KKKing Victory</h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <div class="price">
+                            <label class="sale">199.000đ</label>
+                            <label>149.000đ</label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="popular-products-btn">
+                <button>More</button>
+            </div>
+
+        </div>
+    </div>
+</div>
