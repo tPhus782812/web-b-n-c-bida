@@ -4,10 +4,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { ProductAdminComponent } from './product-admin/product-admin.component';
 import { CateAdminComponent } from './cate-admin/cate-admin.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [DashboardComponent,RouterLink,RouterOutlet,ProductAdminComponent,CateAdminComponent,AddProductComponent],
+  imports: [DashboardComponent,RouterLink,RouterOutlet,ProductAdminComponent,CateAdminComponent,AddProductComponent,EditProductComponent],
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })

@@ -1,0 +1,32 @@
+
+
+<div class="head-title">
+    <!-- Existing content... -->
+    <div class="left">
+        <h1> Edit Category </h1>
+        <ul class="breadcrumb">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i></li>
+
+        </ul>
+    </div>
+</div>
+
+<form [formGroup]="cateFrom" (ngSubmit)="onSubmit()">
+    <div class="form-group"  *ngIf="cate">
+        <label>ID</label>
+        <input type="number" placeholder="{{cate.id}}" formControlName="id" class="form-control" readonly>
+
+    </div>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="{{cate.name}}" formControlName="name" class="form-control">
+        <!-- Đoạn này sẽ kiểm tra productForm và productName có tồn tại trước khi truy cập đến valid và touched -->
+        <span *ngIf="cateFrom?.get('name')?.invalid &&
+        cateFrom?.get('name')?.touched">
+            Bạn chưa nhập tên
+        </span>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>

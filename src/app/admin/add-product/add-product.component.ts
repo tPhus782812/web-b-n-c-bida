@@ -24,14 +24,11 @@ export class AddProductComponent implements OnInit {
       "image": new FormControl(''),
       "date": new FormControl(null),
       "hidden": new FormControl(null),
-      
-
-
   })
 }
 onSubmit(){
     console.log(this.productForm.value);
-    this.productService.create(this.productForm.value).subscribe();
+    this.productService.postAddProduct(this.productForm.value).subscribe();
     alert("Thêm sản phẩm thành công"+this.productForm.value.name)
     }
     addImageUrl() {

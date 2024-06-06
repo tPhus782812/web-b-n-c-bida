@@ -1,0 +1,43 @@
+<div id="wrapper">
+    <!-- <form action="" id="form-login">
+        <h1 class="form-heading">Đăng nhập</h1>
+        <div class="form-group">
+            <i class="far fa-user"></i>
+            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+        </div>
+        <div class="form-group">
+            <i class="fas fa-key"></i>
+            <input type="password" class="form-input" placeholder="Mật khẩu">
+            <div id="eye">
+                <i class="far fa-eye"></i>
+            </div>
+        </div>
+        <input type="submit" value="Đăng nhập" class="form-submit">
+    </form> -->
+
+
+
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" id="form-login">
+        <h1 class="form-heading">Đăng nhập</h1>
+        <div class="form-group">
+            <i class="far fa-user"></i>
+            <!-- <label>Email</label> -->
+            <input id="first-name" type="email" placeholder="Tài khoản" class="form-input" name="user" formControlName="username">
+        </div>
+        <div class="form-group">
+            <!-- <label>Mật khẩu</label> -->
+            <i class="fas fa-key"></i>
+            <input id="last-name" type="password"placeholder="Mật khẩu" class="form-input" name="pass" formControlName="password">
+        </div>
+    
+        
+        <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+
+    </form>
+
+
+</div>
+
+
+<script src="../../assets/app.js"></script>

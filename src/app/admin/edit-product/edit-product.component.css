@@ -1,0 +1,55 @@
+
+.head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #E2AF5A;
+}
+
+
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #ffff;
+
+  }
+  
+  .form-group label {
+    flex: 0 0 100px; /* Đặt chiều rộng cố định cho label */
+    margin-right: 10px; /* Khoảng cách giữa label và input */
+  }
+  
+  .form-control {
+    flex: 1; /* Cho phép input chiếm phần còn lại của không gian */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-success {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  span {
+    display: block;
+    margin-top: 5px;
+    color: #dc3545;
+    font-size: 14px;
+  }
+
+
+  

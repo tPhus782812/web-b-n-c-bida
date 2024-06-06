@@ -30,8 +30,8 @@
                 <td>{{c.id}}</td>
                 <td>{{c.name}}</td>
                 <td>
-                  <button class="btn-edit">Sửa</button>
-                  <button class="btn-delete">Xóa</button>
+                  <button class="btn-edit" routerLink="/admin/cate-admin/{{c.id}}">Sửa</button>
+                  <button class="btn-delete"  (click)="delete(c.id)">Xóa</button>
                 </td>
               </tr>
               <!-- Thêm các hàng khác tùy theo dữ liệu của bạn -->

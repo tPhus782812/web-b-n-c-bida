@@ -20,6 +20,7 @@
             <thead>
               <tr>
                 <th>ID</th>
+                <th>ID_Cate</th>
                 <th>Tên</th>
                 <th>Image</th>
                 <th>Giá</th>
@@ -30,16 +31,17 @@
             <tbody *ngFor="let sp of products">
               <tr>
                 <td>{{sp.id}}</td>
+                <td>{{sp.id_cate}}</td>
                 <td>{{sp.name}}</td>
                 <td><img src="../../../assets/image/{{sp.image}}" alt="Product 1" /></td>
                 <td>{{sp.price}}</td>
                 <td>Available</td>
                 <td>
-                  <button class="btn-edit">Sửa</button>
-                  <button class="btn-delete">Xóa</button>
+                  <button class="btn-edit" routerLink="/admin/product-admin/{{sp.id}}">Edit</button>
+                  <button class="btn-delete" (click)="delete(sp.id)">Xóa</button>
                 </td>
-              </tr>
-              <!-- Thêm các hàng khác tùy theo dữ liệu của bạn -->
+               
+              </tr>/
             </tbody>
 
             

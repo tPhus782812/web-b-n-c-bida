@@ -1,11 +1,11 @@
 export interface IProduct {
     id: number;
-    id_cate: string;
+    id_cate: number;
     name: string;
     price: number;
     price_sale: number;
     image: string;
     date: string;
-    starRating: string;
+    hidden: number;
 }
 

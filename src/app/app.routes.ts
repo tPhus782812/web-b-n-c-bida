@@ -10,6 +10,10 @@ import { ProductAdminComponent } from './admin/product-admin/product-admin.compo
 import { CateAdminComponent } from './admin/cate-admin/cate-admin.component';
 import { AddProductComponent } from './admin/add-product/add-product.component';
 import { AddCateComponent } from './admin/add-cate/add-cate.component';
+import { EditProductComponent } from './admin/edit-product/edit-product.component';
+import { EditCateComponent } from './admin/edit-cate/edit-cate.component';
+import { LoginComponent } from './login/login.component';
+import { loginGuard } from './login.guard';
 
 export const routes: Routes = [
    
@@ -26,10 +30,13 @@ export const routes: Routes = [
     {
         path: 'admin',
         component: AdminComponent,
+        canActivate : [loginGuard],
         children: [
             { path: '', component: DashboardComponent },
-            { path: 'product-admin', component: ProductAdminComponent },
+            { path: 'product-admin', component: ProductAdminComponent },    
+            { path: 'product-admin/:id', component: EditProductComponent },
             { path: 'cate-admin', component: CateAdminComponent },
+            { path: 'cate-admin/:id', component: EditCateComponent },
             { path: 'add-product', component: AddProductComponent },
             { path: 'add-cate', component: AddCateComponent },
 
@@ -38,6 +45,10 @@ export const routes: Routes = [
 
         ]
     },
+    {
+        path: 'login',
+        component: LoginComponent,
+    }
 
 
 
