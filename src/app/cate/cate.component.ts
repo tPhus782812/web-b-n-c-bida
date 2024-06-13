@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CateService } from '../services/cate.service';
 import { CommonModule } from '@angular/common';
+import { ProductService } from '../services/product.service';
 @Component({
   selector: 'app-cate',
   standalone: true,
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 export class CateComponent implements OnInit {
   cates:any;
-constructor(private cate: CateService ) {
+  cart : any = [];
+constructor(private cate: CateService,private detail: ProductService) {
   console.log(cate);
  }
 ngOnInit(): void {

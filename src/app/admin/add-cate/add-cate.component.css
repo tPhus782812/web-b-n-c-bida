@@ -33,7 +33,7 @@
   .btn-success {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #28a745;
+    background-color: #E2AF5A;
     border: none;
     color: white;
     border-radius: 5px;
@@ -41,7 +41,8 @@
   }
   
   .btn-success:hover {
-    background-color: #218838;
+    background-color: #fff;
+    color: black;
   }
   
   span {

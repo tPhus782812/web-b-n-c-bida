@@ -1,8 +1,9 @@
+const {adminAuth, userAuth } = require('../auth');
 var db = require('../models/database');
 var express = require('express');
 var router = express.Router();
 //router api
-router.get('/', (req, res) => {
+router.get('/',adminAuth, (req, res) => {
     let sql = `SELECT * FROM category ;`;
 
     db.query(sql, (err, data) => {
@@ -10,7 +11,7 @@ router.get('/', (req, res) => {
         res.json(data);
     })
 })
-router.get('/:id', (req, res) => {
+router.get('/:id',adminAuth, (req, res) => {
     let id = req.params.id;
     if (isNaN(id) == true) {
         res.json({ 'thongbao': `Loại ${id} không được tồn tại !! Vui lòn nhập lại.` });
@@ -22,7 +23,7 @@ router.get('/:id', (req, res) => {
         res.json(data[0]);
     })
 })
-router.post('/', (req, res) => {
+router.post('/',adminAuth, (req, res) => {
     let data = req.body;
     let sql = `INSERT INTO category SET ?`;
     db.query(sql, data, (err, data) => {
@@ -30,7 +31,7 @@ router.post('/', (req, res) => {
         else res.json({ 'thongbao': 'Đã chèn xong sản phẩm' });
     })
 })
-router.put('/:id', (req, res) => {
+router.put('/:id',adminAuth, (req, res) => {
     let id = req.params.id;
     if (isNaN(id) == true) {
         res.json({ 'thongbao': `Sản phẩm ${id} không được tồn tại !! Vui lòn nhập lại.` });
@@ -43,7 +44,7 @@ router.put('/:id', (req, res) => {
         else res.json({ 'thongbao': `Đã cập nhật xong sản phẩm ${id}` });
     })
 })
-router.delete('/:id', (req, res) => {
+router.delete('/:id',adminAuth, (req, res) => {
     let id = req.params.id;
     let sql = `DELETE FROM category WHERE id = ${id}`;
     db.query(sql, id, (err, data) => {

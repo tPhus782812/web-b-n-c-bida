@@ -22,4 +22,7 @@ export class ProductComponent implements OnInit {
         this.products = res;
       })
   }
+  addtocart(products:any){
+console.log(products);
+  }
 }

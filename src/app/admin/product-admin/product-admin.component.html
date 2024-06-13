@@ -1,12 +1,16 @@
       <!-- MAIN -->
       <main>
+
         <div class="head-title">
           <!-- Existing content... -->
           <div class="left">
             <h1>Manage Product </h1>
             <ul class="breadcrumb">
               <li>
-                <a href="#">Dashboard</a>
+                <!-- <a href="#">Dashboard</a>
+                  -->
+        <input type="text" class="col-3" [(ngModel)]='listFilter'>
+
               </li>
               <li><i class="bx bx-chevron-right"></i></li>
 
@@ -21,21 +25,21 @@
               <tr>
                 <th>ID</th>
                 <th>ID_Cate</th>
-                <th>Tên</th>
+                <th>Name</th>
                 <th>Image</th>
-                <th>Giá</th>
-                <th>Trạng Thái</th>
-                <th>Hành Động</th>
+                <th>Price</th>
+                <th>Hidden</th>
+                <th>Status</th>
               </tr>
             </thead>
-            <tbody *ngFor="let sp of products">
+            <tbody *ngFor="let sp of products | paginate: { itemsPerPage: 5, currentPage: p }">
               <tr>
                 <td>{{sp.id}}</td>
                 <td>{{sp.id_cate}}</td>
                 <td>{{sp.name}}</td>
                 <td><img src="../../../assets/image/{{sp.image}}" alt="Product 1" /></td>
                 <td>{{sp.price}}</td>
-                <td>Available</td>
+                <td>{{sp.hidden}}</td>
                 <td>
                   <button class="btn-edit" routerLink="/admin/product-admin/{{sp.id}}">Edit</button>
                   <button class="btn-delete" (click)="delete(sp.id)">Xóa</button>
@@ -46,6 +50,7 @@
 
             
           </table>
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>  
         </div>
       </main>
       <!-- MAIN -->

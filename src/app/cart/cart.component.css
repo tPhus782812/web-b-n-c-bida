@@ -1,0 +1,219 @@
+
+/*content*/
+
+.content {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+    background: url(https://nkbida.com/wp-content/uploads/2022/12/bg_img_productlist-1-1.png);
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.content-box {
+    margin-left: 23%;
+    /* background: linear-gradient(35deg, rgba(0, 0, .1), rgba(0, 0, 0, .1));  */
+    /* padding: 1%; */
+    text-align: center;
+}
+
+.content-box h2 {
+    font-weight: 400;
+    font-size: 45px;
+    color: #E2AF5A
+}
+
+.content-box label {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+}
+
+.content-box label span {
+    color: red;
+}
+
+.content-box a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    /* letter-spacing: 3px; */
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    background-color: #E2AF5A;
+    /* box-shadow: 4px 4px 10px #8EACCD, -4px -4px 10px #fff; */
+}
+
+.content-box a:hover {
+    box-shadow: -4px -4px 10px #8EACCD, 4px 4px 10px #fff;
+}
+
+section {
+    background: #000; /* Màu nền đen */
+    padding: 20px;
+  }
+  
+  .cart-container {
+    background-color: #1a1a1a; /* Màu nền tối hơn */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .head-title h1 {
+    text-align: center;
+    color: #fff; /* Màu chữ trắng */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .styled-table thead tr {
+    background-color: #E2AF5A; /* Giữ nguyên màu cho tiêu đề để tạo sự tương phản */
+    color: #333; /* Điều chỉnh màu chữ cho tiêu đề nếu cần */
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    color: #fff; /* Màu chữ trắng */
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;   
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #2a2a2a; /* Màu nền xen kẽ cho các hàng */
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #E2AF5A;
+  }
+  
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #E2AF5A;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-edit {
+    background-color: #ffa502;
+    color: white;
+  }
+  
+  .btn-edit:hover, .btn-delete:hover {
+    background-color: #ffffff;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-delete {
+    background-color: #ff4757;
+    color: white;
+  }
+  
+  .total, .checkout {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    transition: background-color 0.3s ease;
+  }
+  /* CSS cho phần tổng cộng */
+.total {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  
+  .total p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Tạo một chút nổi bật cho tổng tiền */
+  .total .total-price {
+    font-weight: bold;
+    color: #E2AF5A;
+  }
+  
+  .checkout {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .btn-edit, .btn-delete {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-edit {
+    background-color: #E2AF5A;
+    color: white;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #E2AF5A;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }

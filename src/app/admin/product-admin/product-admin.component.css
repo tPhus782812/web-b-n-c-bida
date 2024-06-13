@@ -8,7 +8,7 @@
 	width: 100%;
 	border-collapse: collapse;
 	margin: 25px 0;
-	font-size: 0.9em;
+	font-size: 1.5em;
 	font-family: sans-serif;
 	min-width: 400px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -61,13 +61,67 @@
 	color: white;
   }
   
+  btn-edit:hover {
+	background-color: #ffff;
+	color: black;
+  }
+  
   .btn-delete {
 	background-color: #ff4757;
 	color: white;
   } 
+  .btn-delete:hover {
+	background-color: #ffff;
+	color: black;
+  }
 main .head-title .left h1 {
 	font-size: 36px;
 	font-weight: 600;
 	margin-bottom: 10px;
 	color: #E2AF5A;
 }
+.styled-table thead th,
+.styled-table tbody td {
+  text-align: center;
+}
+
+
+/* next page  */
+/* Đây chỉ là ví dụ CSS, bạn có thể tùy chỉnh theo nhu cầu */
+.pagination-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+  }
+  
+  .pagination-wrapper .pagination-previous,
+  .pagination-wrapper .pagination-next {
+	padding: 5px 10px;
+	margin: 0 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .pagination-wrapper .pagination-previous.disabled,
+  .pagination-wrapper .pagination-next.disabled {
+	color: #ccc;
+	cursor: default;
+	border-color: #ccc;
+  }
+  
+  .pagination-wrapper .pagination-page {
+	padding: 5px 8px;
+	margin: 0 3px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .pagination-wrapper .pagination-page.selected {
+	background-color: #ffa502;
+	color: white;
+	border-color: #007bff;
+  }
+  
+  /* Thêm mọi style khác bạn muốn áp dụng */

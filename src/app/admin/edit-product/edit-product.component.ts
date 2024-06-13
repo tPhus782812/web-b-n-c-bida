@@ -18,7 +18,7 @@ export class EditProductComponent  implements OnInit {
 
   ngOnInit(): void {
     let id = + this.route.snapshot.params['id']
-    this.productService.getById(id).subscribe(res => {
+    this.productService.getProduct_id(id).subscribe(res => {
       this.product = res
       console.log(this.product)
     });
@@ -48,7 +48,7 @@ export class EditProductComponent  implements OnInit {
       date, 
       hidden
     }
-    this.productService.updateProduct(id, data).subscribe(res => {
+    this.productService.update(id, data).subscribe(res => {
       this.productService = res
       alert('sua thanh cong voi san pham co so id: ' + id)
     })

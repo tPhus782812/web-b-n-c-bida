@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var adminProductRouter = require('./routes/adminProduct');
 var adminCATERouter = require('./routes/adminCATE');
 var memberRouter = require('./routes/member');
+// var donhangRouter = require('./routes/bill');
 
 
 var app = express();
@@ -33,7 +34,7 @@ app.use('/users', usersRouter);
 app.use('/admin/product', adminProductRouter);
 app.use('/admin/cate', adminCATERouter);
 app.use('/member', memberRouter);
-
+// app.use('/donhang', donhangRouter);
 // app.use('/admin/donhang', adminDonHangRouter);
 
 

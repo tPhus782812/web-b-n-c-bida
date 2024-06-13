@@ -39,4 +39,21 @@ export class ProductService {
   getProduct_id(id:number):Observable<any>{
     return this.http.get<any>('http://localhost:3000/product/'+id);
   }
+  update(id:number,data:any):Observable<any>{
+    return this.http.put<any>('http://localhost:3000/product/'+id,data);
+  }
+  getDelete(id:number):Observable<any>{
+    return this.http.delete<any>('http://localhost:3000/product/'+id);
+  }
+  create(data:any):Observable<any>{
+    return this.http.post<any>('http://localhost:3000/product',data);
+  }
+  getAddtoCart(){
+    let cartJson = sessionStorage.getItem('cart');
+    if(cartJson){
+      return JSON.parse(cartJson);
+    }else{
+      return [];
+    }
+  }
 }

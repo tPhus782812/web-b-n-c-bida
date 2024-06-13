@@ -1,0 +1,64 @@
+<div class="content">
+  <div class="content-box">
+      <h2>Cơ Billiard </h2>
+      <label>Chuyên cung cấp cơ & phụ kiện đa dạng các sản phẩm Cơ gậy từ các thương hiệu lớn tại thị trường, <br>
+          với đầy đủ các phân khúc giá khác nhau</label> <br>
+      <!-- <a href=""> <i class="fa-solid fa-arrow-right"></i> </a> -->
+  </div>
+</div>
+<section >
+  <div class="cart-container table-wrapper" *ngIf ="cart.length">
+    <div class="head-title">
+        <div class="left">
+            <h1>Giỏ Hàng</h1>
+        </div>
+    </div>
+    <div>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Tên Sản Phẩm</th>
+            <th scope="col">Số Lượng</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Thành tiền</th>
+            <th scope="col">Hành Động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cart; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{item.name}}</td>
+            <td>
+              <button class="btn-edit" (click)="decreaseQuantity(item.id)">-</button>
+              {{item.quantity}}
+              <button class="btn-edit" (click)="increaseQuantity(item.id)">+</button>
+          </td>
+            <td>{{item.price}}</td>
+            <td><img src="../../assets/image/{{item.image }}" alt="Hình ảnh sản phẩm" style="width: 50px; height: auto;"></td>
+           <!-- Cập nhật cách hiển thị subtotal trong template của cart.component.html -->
+<td>{{ subtotal(item) }}</td>
+
+            <td>
+                <button class="btn-delete" (click)="removeFromCart(item.id)">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="total">
+        <p>Tổng số lượng: {{ totalQuantity }}</p>
+        <p>Tổng tiền: {{ totalPrice | currency:'VND' }}</p>
+      </div>
+      <div class="checkout">
+        <button class="btn btn-edit" (click)="goToPaymentPage()">Thanh Toán</button>
+        <button class="btn btn-delete" (click)="clearCart()">Xóa giỏ hàng</button>
+
+      </div>
+    
+    </div>
+    <ng-template *ngIf="cart.length == 0">
+      <p>Giỏ hàng của bạn đang trống!</p>
+    </ng-template>
+  </div>
+</section>

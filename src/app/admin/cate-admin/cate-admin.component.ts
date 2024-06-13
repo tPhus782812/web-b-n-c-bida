@@ -16,7 +16,7 @@ constructor(private cate: CateService ) {
   console.log(cate);
  }
 ngOnInit(): void {
-    this.cate.getList().subscribe(res => {
+    this.cate.getAll().subscribe(res => {
       // console.log(res);
       this.cates = res;
     })

@@ -14,6 +14,9 @@ import { EditProductComponent } from './admin/edit-product/edit-product.componen
 import { EditCateComponent } from './admin/edit-cate/edit-cate.component';
 import { LoginComponent } from './login/login.component';
 import { loginGuard } from './login.guard';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CartComponent } from './cart/cart.component';
+import { PaymentComponent } from './payment/payment.component';
 
 export const routes: Routes = [
    
@@ -25,6 +28,9 @@ export const routes: Routes = [
             { path: 'products', component: ProductComponent },
             { path: 'products/:id', component: ProductdetailComponent },
             { path: 'cate', component: CateComponent },
+            { path: 'cart', component: CartComponent },
+            {path:'payment',component:PaymentComponent}
+
         ]
     },
     {
@@ -38,7 +44,7 @@ export const routes: Routes = [
             { path: 'cate-admin', component: CateAdminComponent },
             { path: 'cate-admin/:id', component: EditCateComponent },
             { path: 'add-product', component: AddProductComponent },
-            { path: 'add-cate', component: AddCateComponent },
+            { path: 'add-cate', component: AddCateComponent },  
 
 
 
